@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@200&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6ebaac;
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%237dde9d' fill-opacity='0.62'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.container {
+  width: 90vw;
+  height: 90vh;
+  background-color: #cee397;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.box1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.box1 img {
+  width: 60%;
+  height: 100%;
+}
+
+.box2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.box2-titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input,
+button {
+  border: none;
+}
+
+h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 48px;
+}
+
+h2,
+input,
+button {
+  font-family: 'Poppins', sans-serif;
+}
+
+input {
+  border-bottom: solid 1px #587792;
+  background-color: #cee397;
+  width: 250px;
+  margin: 6px 0;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.title {
+  margin-bottom: 15px;
+}
+
+.title,
+.subtitle {
+  text-align: center;
+}
+
+button img {
+  width: 24px;
+}
+
+.btns {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  width: 170px;
+  padding: 5px;
+  background-color: #f4e04d;
+  margin: 0 10px;
+  border: solid 1px #000;
+}
+
+.register {
+  margin: 30px 0;
+}
+
+.signup-title {
+  margin-bottom: 10px;
+}
+
+button img {
+  margin-left: 5px;
+}
+
+@media (max-width: 1024px) {
+  .box1 {
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .box1 {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .btns {
+    flex-direction: column;
+  }
+  .btns button {
+    margin: 10px;
+  }
+  .subtitle {
+    margin: 5px 5px;
+  }
+}
